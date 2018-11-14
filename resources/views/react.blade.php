@@ -9,6 +9,7 @@
     </head>
     <body>
         <div id="example"></div>
-        <script src="{{asset('js/app.js')}}" ></script>
+        <!-- <script src="{{asset('js/app.js')}}" ></script> -->
+        <script src="https://warm-beach-11139.herokuapp.com/js/app.js" ></script>
     </body>
 </html>
