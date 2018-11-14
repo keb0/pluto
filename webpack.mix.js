@@ -11,24 +11,6 @@ let mix = require('laravel-mix');
  |
  */
 
- if (mix.inProduction()) {
-
-    mix.js('resources/js/app.js', 'public/js')
-        .sass('resources/assets/sass/my-styles.scss', 'public/css')
-        .version();
- 
-    mix.combine(['node_modules/jquery/dist/jquery.min.js', 
-              'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
-              'node_modules/slick-carousel/slick/slick.min.js'], 'public/js/vendor.js')
-              .version();
- 
-}else {
- 
-    mix.js('resources/js/app.js', 'public/js')
-       .sass('resources/assets/sass/my-styles.scss', 'public/css');
-
-    mix.combine(['node_modules/jquery/dist/jquery.min.js', 
-              'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
-              'node_modules/slick-carousel/slick/slick.min.js'], 'public/js/vendor.js');
- 
-}
+mix.react('resources/assets/js/app.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css');
+   .version();
