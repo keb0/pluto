@@ -12,7 +12,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        // slack
-        // 'https://api.slack.com/robots',
+        //
     ];
 }
