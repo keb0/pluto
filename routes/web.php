@@ -21,3 +21,5 @@ Route::get('/react', function () {
 
 Route::get('/talk', 'RestController@index');
 Route::post('/talk', 'RestController@post');
+
+Route::get('/chat', 'RestController@chat');

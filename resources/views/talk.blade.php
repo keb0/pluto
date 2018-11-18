@@ -78,9 +78,6 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Hello Laravel
-                </div>
                 <form action="/talk" method="post">
                     {{ csrf_field() }}
                     <label for="">talk</label>
