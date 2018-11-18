@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/react', function () {
     return view('react');
 });
+
+Route::get('/talk', 'RestController@index');
+Route::post('/talk', 'RestController@post');
