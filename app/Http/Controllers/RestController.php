@@ -24,7 +24,6 @@ class RestController extends Controller
     }
 
     public function chat(Request $request) {
-        $response = $this->restService->post($request->message);
-        return view('talk')->with('message', $response);
+        return $this->restService->post($request->message);
     }
 }
