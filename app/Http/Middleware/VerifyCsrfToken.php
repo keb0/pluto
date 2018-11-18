@@ -12,6 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        // slack
+        'https://warm-beach-11139.herokuapp.com/chat',
     ];
 }
