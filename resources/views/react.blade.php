@@ -5,8 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <title>Laravel</title>
+        <!-- https://qiita.com/nabettu/items/1593af04e48444c45c53 -->
+        <style type="text/css">
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            appearance: none;
+        }
+        </style>
+        <title>Talk</title>
 
         @if(app('env')=='local')
             <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
